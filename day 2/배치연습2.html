@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  #wrapper{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    margin: 0 auto; 
+    /*wrapper 박스를 둘러싼 외부 공간에서 다른 물체와의 간격을 자동으로 계산하여 할당*/
+  }
+  #aside{
+    width: 250px;
+    height: 500px;
+    background-color: red;
+    float: left;
+    clear: both;
+  }
+  #header{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    float: left;
+  }
+  #content{
+    width: 250px;
+    height: 250px;
+    background-color: blue;
+    float: left;
+  }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="aside">빨간색</div>
+    <div id="header">노란색</div>
+    <div id="content">파란색</div>
+  </div>
+</body>
+</html>

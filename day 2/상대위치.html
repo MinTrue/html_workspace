@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* css 에서는 쉼표가 그리고(end) */
+    #box1,#box2{
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+    #box2{
+      background-color: blue;
+      position: relative;
+      /* top,left 값을 사용하기 위해서는 반드시 포지션을 명시하고 써야 함 */
+      top: 100px; /*현재 파란 사각형은 자신이 할당받은 노멀포지션이 y가 0이므로
+      100을부여하면, 현재 위치에서 100만큼 내려온다.*/
+    }
+  </style>
+</head>
+<body>
+  <!--
+    개발자가 아무것도 위치값을 지정하짐 않으면 디폴트(초기값)는 relative 이다
+    태그가 태어날때 부여받는 위치를 normal position 이라 하며, 이 normal position이
+    상대 태그에 의해 영향을 받는 위치 속성을 가리켜 상대위치라 한다.
+  -->
+  <div id="box1"></div>
+  <div id="box2"></div>
+</body>
+</html>

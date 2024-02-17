@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span{
+      background-color: blue;
+      width: 300px;
+      height: 200px;
+      display: inline-block; 
+      /*span은 inline이므로 너비 높이 적용불가
+        단, 속성을 inline-block 으로 바꾼다면 너비 높이 적용가능
+      */
+    }
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 모든 tag는 공존가능성을 기준으로 했을때
+    inline : 공존 O, 단 너비와 높이 적용 불가
+    block : 공존 X, 단 너비,높이 적용 가능
+  -->
+  <img src="../images/character.png">
+  <span>바나나</span>
+  <span>파인애플</span>
+</body>
+</html>

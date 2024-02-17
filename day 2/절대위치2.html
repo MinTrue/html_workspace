@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*절대위치 속성은 다른 태그 요소에 의해 위치가 밀려나지 않는다.(relative가 아님) 
+      이미 다른 태그 요소가 같은 자리에 위치한다 할지라고, 중첩을 허용한다.
+    */
+    #box1,#box2{
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+    #box1{
+      background-color: red;
+      left: 50px; /*부모를 기준으로 x축50*/
+      top: 50px; /*부모를 기준으로 y축50*/
+    }
+    #box2{
+      background-color: blue;
+      left: 0px; /*부모를 기준으로 x축200*/
+      top: 0px; /*부모를 기준으로 y축250*/
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="box1"></div>
+  <div id="box2"></div>
+</body>
+</html>

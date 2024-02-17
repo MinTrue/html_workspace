@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- 
+    css란? html란 디자읹넉 능력의 보완
+    css: 3가지 방법으로 적용가능
+    1)인라인
+    2)내부css: style 태그에서 적용
+    3)외부파일로 링크  
+  -->
+  <style>
+    /*
+      css의 문법구조는 아주 단순(syntax)
+      (누구를)어떻게{} 이때 누구 자리에 올수 있는 주체르 선택자라 한다.
+     */
+    div{
+      width: 200px;
+      height: 200px;
+    }
+    #a{
+      background-color: red;
+    }
+    #b{
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <!--div 문서를 분할할때 사용되는 태그 -->
+  <div id="a">A</div>
+  <div id="b">B</div>
+</body>
+</html>

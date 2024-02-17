@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iframe학습</title>
+  <style>
+    body{
+      margin: 0 auto;
+    }
+    #wrapper{
+      width: 100%;
+      height: 900px;
+      background-color: yellow;
+    }
+    #aside{
+      width:20%;
+      height: 100%;
+      background-color: aquamarine;
+      float: left;
+    }
+    #content{
+      width: 80%;
+      height: 100%;
+      background-color: bisque;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="aside">
+      <ul>
+        <li><h3>1일차 수업</h3></li>
+        <li>
+          <a href="./day 1/Box모델.html" target="myframe">Box모델</a>
+        </li>
+      </ul>
+      <ul>
+        <li><h3>2일차 수업</h3></li>
+        <li>
+          <a href="./day 1/CSS연습.html" target="myframe">css연습</a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <!-- 
+        프레임이란? 하나의 브라우저안에 html 문서를 여러개 둘 수 있는데.
+        이때 html문서는 프레인 단위로 넣을 수 있다.
+        iframe은? 기존 프레임과는 달리 크기와 위치를 자유롭게 둘 수 있다.
+      -->
+      <iframe name="myframe" src="./day 1/Box모델.html" frameborder="0" width="98%" height="95%"></iframe>
+    </div>
+  </div>
+</body>
+</html>

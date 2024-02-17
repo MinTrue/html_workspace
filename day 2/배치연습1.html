@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrapper{
+      width: 500px;
+      height: 500px;
+      background-color: greenyellow;
+    }
+    #header{
+      width: 500px;
+      height: 250px;
+      background-color: red;
+      clear: both;
+    }
+    #aside{
+      width: 250px;
+      height: 250px;
+      background-color: blue;
+      float: left;
+
+      /*다른 태그와의 공존을 위해 block을 inline으로 바꿈
+        inline은 너비와 높이를 부여할 수 없다
+      */
+    }
+    #content{
+      width: 250px;
+      height: 250px;
+      background-color: yellow;
+      float: left;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header">빨간색</div>
+    <div id="aside">파란색</div>
+    <div id="content">노란색</div>
+  </div>
+</body>
+</html>
